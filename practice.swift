@@ -21,3 +21,24 @@ if let num1 , let num2 {
     }
 let number = sum(num1: 5 , num2: 5)
 print(number)
+
+//loop
+ //session 4
+ let names = ["heba","loes", "andre"]
+for names in names {
+    print ("hello my family \(names)")
+}
+for fullName in "heba omar"{
+    print("my letter in my full name is \(fullName)")
+}
+
+//half open range operator
+let animals = ["lion","cat","dog"]
+for animal in 0..<animals.count{
+    print ("\(animal) my fav animals is \(animals[animal]) ")
+}
+//loop through dictionary
+let student: [String : Any] = ["name":"heba", "age":25, "grade": 6]
+for (key,value) in student {
+    print(" \(key) is \(value)")
+}

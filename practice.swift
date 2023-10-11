@@ -63,3 +63,22 @@ class Order {
 }
 let newOrder = Order(id: "tesla", model: 2003, status: .pending)
 print (newOrder.status)
+
+
+//computed proberties_used get 
+class Myname {
+    var firstName: String = "Heba"
+    var lastName: String = "Omar"
+    
+    //computed Proberties
+    var fullName: String {
+        get {
+            return " my full name is \(firstName) \(lastName)"
+        }
+    }
+}
+let new = Myname()
+print (new.fullName)
+
+//computed proberties_used set
+

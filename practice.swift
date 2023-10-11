@@ -80,12 +80,12 @@ class Myname {
 let new = Myname()
 print (new.fullName)
 
-//computed proberties_used set
+//computed property_used set
 class Myname {
     var firstName: String = "Heba"
     var lastName: String = "Omar"
     
-    //computed Properties
+    //computed property
     var fullName: String {
         get {
             return " my full name is \(firstName) \(lastName)"

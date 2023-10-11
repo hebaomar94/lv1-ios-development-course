@@ -42,3 +42,24 @@ let student: [String : Any] = ["name":"heba", "age":25, "grade": 6]
 for (key,value) in student {
     print(" \(key) is \(value)")
 }
+
+
+//type value (numeration) _ enums (keyword)
+enum Status {
+    case pending
+    case processing
+    case done
+}
+
+class Order {
+    var id: String
+    var model: Int
+    var status: Status = .pending
+    
+    init(id: String, model: Int , status: Status){
+        self.id = id
+        self.model = model
+    }
+}
+let newOrder = Order(id: "tesla", model: 2003, status: .pending)
+print (newOrder.status)

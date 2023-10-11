@@ -81,4 +81,29 @@ let new = Myname()
 print (new.fullName)
 
 //computed proberties_used set
+class Myname {
+    var firstName: String = "Heba"
+    var lastName: String = "Omar"
+    
+    //computed Properties
+    var fullName: String {
+        get {
+            return " my full name is \(firstName) \(lastName)"
+        }
+        
+        //use sit _this code will implement when i made new name
+        set(newfULLname) {
+            let names: [String] = newfULLname.components(separatedBy: " ")
+            //if i need two name i can make if condition
+            if names.count >= 2 {
+                firstName = names[0]
+                lastName = names [1]
+            }
+        }
+    }
+}
+let new = Myname()
+print (new.fullName)
+new.fullName = "Max Verstappen"
+print(new.fullName)
 

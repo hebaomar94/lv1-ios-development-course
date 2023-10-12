@@ -43,7 +43,7 @@ for (key,value) in student {
     print(" \(key) is \(value)")
 }
 
-
+//session5
 //type value (numeration) _ enums (keyword)
 enum Status {
     case pending
@@ -106,4 +106,28 @@ let new = Myname()
 print (new.fullName)
 new.fullName = "Max Verstappen"
 print(new.fullName)
+
+
+
+//willSet _ didSet 
+class Myname {
+    var firstName: String = "Heba"{
+        willSet(newFirst){
+            print("my new firstname is \(newFirst)")
+        } didSet (oldFirstname) {
+            print("my old firstname is \(oldFirstname)")
+        }
+       
+    }
+    var lastName: String = "Omar"
+    var fullname: String {
+        get {
+            return "\(firstName) \(lastName)"
+        }
+    }
+    
+}
+let new = Myname()
+new.firstName = "hbhb"
+//print(new.firstName)
 

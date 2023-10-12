@@ -131,3 +131,20 @@ let new = Myname()
 new.firstName = "hbhb"
 //print(new.firstName)
 
+
+//another example about did / will
+
+class Student {
+    var firstName: String = "Heba"{
+        willSet(newFirstname){
+            print("first student will be \(newFirstname)")
+        } didSet (oldFirstname) {
+            print("old student was \(oldFirstname)")
+        }
+        
+    }
+}
+    
+let new = Student()
+new.firstName = "heldin"
+

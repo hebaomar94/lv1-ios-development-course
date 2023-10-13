@@ -188,3 +188,11 @@ whatTypeIsIt(input: "Text")
 whatTypeIsIt(input: [1,2,3])
 whatTypeIsIt(input: 12.0)
 
+//Tubles use it when we want store several value in one variable
+var car1 = (color: "red", Model: 555 , Year:2022)
+// access it by two way (car1.0) , (car1.1) and so on.. oder( car1.color or car1.Model)
+
+print(car1.Model)
+print(car1.1)
+print (car1.Year)
+print(car1.2)

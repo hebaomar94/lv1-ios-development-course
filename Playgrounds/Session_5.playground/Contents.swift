@@ -366,3 +366,14 @@ person1.setName(name: "Mo")
 print(person1.name)
 
 var persons = [Person]()
+
+
+//Genric _ accept any data
+//T means (any type)
+func whatTypeIsIt<T> (input: T) ->String {
+    print("the typ is : \(type(of: input))")
+    return "ok"
+}
+whatTypeIsIt(input: "Text")
+whatTypeIsIt(input: [1,2,3])
+whatTypeIsIt(input: 12.0)

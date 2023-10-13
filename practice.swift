@@ -196,3 +196,22 @@ print(car1.Model)
 print(car1.1)
 print (car1.Year)
 print(car1.2)
+
+
+//mutating
+// we use it to change value in struct
+
+struct Point {
+    var x: Int , y:Int
+    
+   mutating func updateValue (x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+}
+var point = Point(x: 10, y: 20)
+print(point)
+
+//here we want to change
+point.x = 20
+print(point)

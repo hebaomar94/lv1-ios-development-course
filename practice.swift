@@ -148,3 +148,34 @@ class Student {
 let new = Student()
 new.firstName = "heldin"
 
+//protocol as a contract class give it some order and it must return it 
+enum Food {
+    case fish
+    case sandwish
+}
+
+protocol Mammal {
+    func eat() -> Food
+}
+struct Oraka: Mammal {
+    func eat() -> Food {
+        return .fish
+    }
+}
+class Human: Mammal {
+    func eat() -> Food {
+        return .sandwish
+    }
+}
+
+let peter = Human()
+print(
+    peter.eat()
+)
+let myOrka = Oraka()
+print (
+    myOrka.eat()
+)
+
+
+

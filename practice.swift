@@ -9,6 +9,7 @@ func sum (num1:Int? = nil , num2:Int? = nil) -> Int{
     // if num1 = num
     // if num2 = num
     return num1 + num2
+    
 }
 let number = sum(num1: 5 , num2: 5)
 print(number)
